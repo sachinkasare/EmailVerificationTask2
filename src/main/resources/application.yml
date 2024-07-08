@@ -1,0 +1,39 @@
+server:
+    port: 8082
+servlet:
+    context-path: /
+spring:
+    application:
+        name: EmailVerification3
+    datasource:
+        password: sonu
+        url: jdbc:mysql://localhost:3306/water
+        username: root
+    jpa:
+        database-platform: org.hibernate.dialect.MySQLDialect
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQLDialect
+                format_sql: true
+                show_sql: true
+    mail:
+        host: smtpout.asia.secureserver.net
+        port: 465
+        username: hr@techcognicsindia.com
+        password: HRTech@12345
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    starttls:
+                        enable: false
+    tech-mail:
+        from: techcognics@gmail.com
+        to: hr@techcognicsindia.com
+        cc: sachinka2023@gmail.com , sachinka228@gmail.com
+
+
+
+
